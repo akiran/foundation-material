@@ -1,0 +1,24 @@
+{
+  "name": "foundation-apps-material-design",
+  "version": "0.1.0",
+  "homepage": "https://github.com/akiran/foundation-apps-material-design",
+  "authors": [
+    "Kiran Abburi"
+  ],
+  "description": "Intergrate foundation for apps with material design",
+  "keywords": [
+    "Foundation",
+    "for",
+    "apps",
+    "material",
+    "design"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
