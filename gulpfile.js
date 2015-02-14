@@ -56,8 +56,8 @@ gulp.task('server', function (callback) {
 });
 
 gulp.task('watch', ['copy', 'sass'], function () {
-  gulp.watch(['./docs/**/*{scss,sass}'], ['sass']);
-  gulp.watch(['./docs/index.html'], ['copy']);
+  gulp.watch(['./docs/**/*{scss,sass}', './scss/**/*{scss,sass}'], ['sass']);
+  gulp.watch(['./docs/index.html', './docs/img/*'], ['copy']);
 });
 
 gulp.task('default', ['watch', 'server']);

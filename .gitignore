@@ -30,3 +30,4 @@ node_modules
 Gemfile.lock
 bower_components
 .sass-cache
+build
