@@ -35,8 +35,12 @@
     "html-loader": "^0.2.3",
     "jsx-loader": "^0.12.2",
     "markdown-loader": "^0.1.2",
+    "object-assign": "^2.0.0",
+    "pubsub-js": "^1.5.0",
     "react": "^0.12.2",
+    "react-foundation-apps": "^0.6.0",
     "react-highlight": "^0.4.1",
+    "react-responsive-mixin": "^0.3.*",
     "react-router": "^0.12.0",
     "webpack": "^1.5.3",
     "webpack-dev-server": "^1.7.0"

@@ -12,7 +12,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.js|jsx$/, loaders: ['6to5']},
+      {test: /\.js|jsx$/, exclude: /\.min\./, loaders: ['6to5']},
       { test: /\.md$/, loader: "html!markdown" },
     ],
   },
