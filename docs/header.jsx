@@ -5,7 +5,7 @@ var Header = React.createClass({
   render: function () {
     return (
       <div className='title-bar primary'>
-        <span className='title'><Link name='app'>Foundation Material</Link></span>      
+        <span className='title'><Link to="app">Foundation Material</Link></span>      
       </div>
     );
   }

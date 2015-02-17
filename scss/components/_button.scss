@@ -1,0 +1,73 @@
+@import "foundation-apps/scss/components/button";
+@import "../helpers/shadow";
+
+@mixin button-style(
+  $background: $button-background,
+  $color: $button-color,
+  $style: $button-style,
+  $btngroup: false
+) {
+  @if $style == flat {
+    background: transparent;
+    color: $background;
+    box-shadow: none;
+    &:hover {
+      box-shadow: none;
+    }
+  } @else if {
+    background: $background;
+    color: isitlight($background);
+    @include shadow(2);
+    &:hover {
+      @include shadow(3);
+      color: isitlight($background);
+    }
+  }
+}
+
+@mixin button(
+  $size: medium,
+  $expand: false,
+  $background: $button-background,
+  $color: $button-color,
+  $style: $button-style
+) {
+  @extend %button;
+  @include button-size($size);
+  @include button-expand($expand);
+  @include button-style($background, $color, $style);
+}
+
+.button {
+  @include button;
+
+  &.tiny   { @include button-size(tiny); }
+  &.small  { @include button-size(small); }
+  &.large  { @include button-size(large); }
+  &.expand { @include button-expand; }
+
+  &.secondary { @include button-style($secondary-color) }
+  &.success   { @include button-style($success-color) }
+  &.warning   { @include button-style($warning-color) }
+  &.alert     { @include button-style($alert-color) }
+  &.info      { @include button-style($info-color) }
+  &.dark      { @include button-style($dark-color) }
+
+  &.flat { 
+    @include button-style($style: flat);
+    &.secondary { @include button-style($secondary-color, $style: flat); }
+    &.success   { @include button-style($success-color, $style: flat); }
+    &.warning   { @include button-style($warning-color, $style: flat); }
+    &.alert     { @include button-style($alert-color, $style: flat); }
+    &.info      { @include button-style($info-color, $style: flat); }
+    &.dark      { @include button-style($dark-color, $style: flat); }
+  }
+
+  &.disabled { @include button-disabled; }
+}
+
+@if $button-tag-selector {
+  button {
+    @extend .button;
+  }
+}

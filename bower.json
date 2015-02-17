@@ -22,6 +22,6 @@
     "tests"
   ],
   "dependencies": {
-    "foundation-apps": "~1.0.2"
+    "foundation-apps": "~1.0.*"
   }
 }

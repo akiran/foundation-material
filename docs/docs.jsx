@@ -13,6 +13,8 @@ var Docs = React.createClass({
             <section>
               <ul className='menu-bar vertical'>
                 <li><Link to='install'>Install</Link></li>
+                <li><Link to='button'>Button</Link></li>
+                <li><Link to='tabs'>Tabs</Link></li>
                 <li><Link to='card'>Card</Link></li>
               </ul>
             </section>
